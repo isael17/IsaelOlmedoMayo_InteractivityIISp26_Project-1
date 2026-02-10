@@ -40,14 +40,6 @@
   height: 200px;
   overflow: hidden;
 }
-.flex-container{
-    display: flex;
-    width: 200vw;
-    background-color: lightcyan;
-    height: 500px;
-    justify-content: center;
-    align-items: center;
-}
 @keyframes changeBGColor{/* the animation's name */
   from {background-color: rgb(0, 255, 191);} /* stating state, needs to have a specific property expression*/
   to {background-color: yellow;} /* ending state, could have multiple ones through percentage*/
@@ -70,3 +62,24 @@ body{
 body:hover, a:hover {
   background-color: rebeccapurple;
 }
+.collage{
+    position: absolute;
+}
+.display-exp{
+  display:flex;
+  gap: 20px;
+}
+.display-exp div{
+    flex: 1;
+    padding: 20px;
+    color: rgb(153, 4, 4);
+    margin: px;
+}
+#moveableImage {
+    position: relative; 
+    transition: transform 1.5s ease-in-out; 
+}
+.moved {
+    transform: translateX(300px)
+}
+
