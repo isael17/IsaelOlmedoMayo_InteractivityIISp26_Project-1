@@ -1,0 +1,72 @@
+  .img-wrap {
+  position: relative;
+  width: 300px;
+  height: 200px;
+  overflow: hidden;
+}
+
+.img-wrap img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.img-description {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7); /* Dark overlay */
+  color: #fff;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s, visibility 0.3s;
+  
+  /* Centering text */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+}
+
+.img-wrap:hover .img-description {
+  visibility: visible;
+  opacity: 1;
+}
+  .img-wrap {
+  position: relative;
+  width: 300px;
+  height: 200px;
+  overflow: hidden;
+}
+.flex-container{
+    display: flex;
+    width: 200vw;
+    background-color: lightcyan;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+}
+@keyframes changeBGColor{/* the animation's name */
+  from {background-color: rgb(0, 255, 191);} /* stating state, needs to have a specific property expression*/
+  to {background-color: yellow;} /* ending state, could have multiple ones through percentage*/
+}
+@keyframes changeColor{
+    from {color: palevioletred;}
+    to {color: rgb(65, 2, 36);}
+}
+body{
+    animation-name: changeColor;
+    animation-duration: 10s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+    animation-fill-mode: forwards;
+}
+.hoverElement:hover{/*add class="hoverElement" to whatever tag you want to hover */
+  color:green;
+}
+body:hover, a:hover {
+  background-color: rebeccapurple;
+}

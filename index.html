@@ -1,9 +1,36 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <title>Title</title>
+<!DOCTYPE html>   <!--Declares this is an HTML5 document-->
+<html lang="en">   <!--html element is always the root element of the page-->
+<head>   <!--Contains metadata about the document-->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My First Web Page</title>
+   <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    Sid The Sloth
+<body style="font-size: xx-large;font-weight: 900;font-family: cursive; color: blue;cursor: grab;" class="flex-container">  <!--Contains the visible page content-->
+    The World of Amazing Cookie Warriors
+<div class="img-wrap">
+  <img src="./images/download.jpg" alt="Cookie"width="500" height="300">
+  <div class="img-description">
+    <p>Shadow Milk Cookie</p>
+  </div>
+</div class="img-wrap">
+<img src="./images/maxresdefault.jpg" alt="Battle of Gods"width="400"height="250">
+<div class="img-description">
+    <p>Kefla Vs Goku Ultra Instinct</p>
+    </div>
+<button 
+   onclick=
+   "document.getElementById('colorChangeButton').style.color='red'"
+   id="colorChangeButton" style="background-color: black;font-size: xx-large;color: palegreen;">
+   Playing Around</button>
+   <button ondblclick=
+    "if(this.style.color=='blueviolet')//this is two equal sign = =
+     {this.style.color='palevioletred'}
+     else
+     {this.style.color='pink'}" style="cursor: grab; background-color: teal; font-weight: 700;writing-mode: vertical-lr; font-size: larger;">
+    Still Wokring On It Busy Weekend</button>
+    <button onmouseup="alert('Page Under Construction');" 
+    id="colorChangeButton" style="background-color: blueviolet; color: aquamarine;">
+    Importan Message
 </body>
 </html>
