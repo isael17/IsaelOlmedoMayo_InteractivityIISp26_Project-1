@@ -56,12 +56,6 @@ body{
     animation-direction: reverse;
     animation-fill-mode: forwards;
 }
-.hoverElement:hover{/*add class="hoverElement" to whatever tag you want to hover */
-  color:green;
-}
-body:hover, a:hover {
-  background-color: rebeccapurple;
-}
 .collage{
     position: absolute;
 }

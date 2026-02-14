@@ -6,36 +6,41 @@
   <title>Greatest Anime</title>
    <link rel="stylesheet" href="style.css">
 </head>
+<header>Introduction</header>
+<p>Hello, my name is Isael Olmedo mayo. This page is gonna be about the greatest anime charcters of all time made into a wacky way of displaying with
+fun, and interactive way. There's gonna be music playing in the background. Th is meant for people to rleax and joy learning about the orgins of these characters.
+</p>
 <body style="font-size: xx-large;font-weight: 900;font-family: cursive; color: blue;cursor: grab;" class="flex-container">  <!--Contains the visible page content-->
     The World of Amazing Cookie Warriors
 <div class="img-wrap">
   <img src="./images/download2.jpg" alt="Cookie"width="500" height="auto">
   <div class="img-description">
-    <p>Shadow Milk Cookie</p>
+    <p>Shadow Milk Cookie - One of the greatest cookies of time. He is the antithesit, and is a malicious trickster who relishes in chaos, confusion, and inequity. behind
+      his mask lies a lonely soul whosse disillusionment wore him down to the cruel, manupulative indivdual he is now.
+    </p>
   </div>
 </div class="img-wrap">
-<img src="./images/maxresdefault.jpg" alt="Battle of Gods"width="400"height="250" class="collage" style="middle:10px;left:1px;" style="transform:rotate(70deg)">
+<img src="./images/maxresdefault.jpg" alt="Battle of Gods"width="400"height="250" class="collage" style="top:10px;left:1px;" style="transform:rotate(70deg)">
 <div class="img-description">
     </div>
   <br>
   <br>
   <br>
   <br>
-   <button ondblclick=
-    "if(this.style.color=='blueviolet')//this is two equal sign = =
-     {this.style.color='palevioletred'}
-     else
-     {this.style.color='blueviolet'}" style="cursor: grab; background-color: teal; font-weight: 700;writing-mode: vertical-lr; font-size: medium">
-    Still Wokring On It Busy Weekend</button>
-    <button onmouseup="alert('Page Under Construction');" 
-    id="colorChangeButton" style="background-color: blueviolet; color: aquamarine;">
-    Important Message </button>
 </body>
    <section>
     <div  class="display-exp">
       <div style="background-color: rgb(255, 217, 4); flex: 8;font-size: medium; font-style: italic;">Kyojuro Rengoku Was One of The Best Flame Hashira Of His Time</div>
   </section>
 <img src="./images/Kimetsu_no_Yaiba_Animation_Illustration_Book_2.webp" alt="Clickable image" id="moveableImage" onclick="moveImage()">
+<img src="./images/download4.jpg" alt="Potati"width="400vw"height="250hw" class="collage" style="bottom:4px;right:5px;" style="transform:rotate(70deg)">
+<img src="./images/71ckeEkhOqL.jpg" alt="Potati"width="400vw"height="250hw" class="collage" style="bottom:4px;right:2px;" style="transform:rotate(70deg)">
+<img src="./images/download.jpg" alt="Potati"width="400vw"height="250hw" class="collage" style="right:3px;" style="transform:rotate(70deg)">
+<img src="./images/download9.jpg" alt="Potati"width="400vw"height="250hw" class="collage" style="left:7px;" style="transform:rotate(70deg)">
+<img src="./images/download4.jpg" alt="Potati"width="400vw"height="250hw" class="collage" style="bottom:4px;right:5px;" style="transform:rotate(70deg)">
+<img src="./images/timthumb.jpg" alt="Potati"width="400vw"height="250hw" class="collage" style="top:5px;" style="transform:rotate(70deg)">
+<img src="./images/images (1).jpg" alt="Potati"width="400vw"height="250hw" class="collage" style="bottom:7px;" style="transform:rotate(70deg)">
+<img src="./images/0a5ae820-7051-4495-bcca-61bf02897472.jpg" alt="Potati"width="400vw"height="250hw" class="collage" style="left: 1px;" style="transform:rotate(70deg)">
     <script src="script.js"></script>
 <script>
 function moveImage() {
@@ -48,10 +53,19 @@ function moveImage() {
 <audio autoplay loop>
   <source src="./songs/Skillet - _Not Gonna Die_ [OFFICIAL MUSIC VIDEO].mp3" type="audio/mpeg">
 </audio>
+</audio>
+
+<!-- HTML for the control buttons -->
+<button onclick="playMedia()" type="button">Play</button>
+<button onclick="stopMedia()" type="button">Stop</button>
 <script>
   var music = new Audio('./songs/Skillet - _Not Gonna Die_ [OFFICIAL MUSIC VIDEO].mp3');
 document.addEventListener('click', function() {
     music.play();
 });
 </script>
+<audio controls>
+  <source src="./songs/Skillet - _Not Gonna Die_ [OFFICIAL MUSIC VIDEO].mp3" type="audio/mpeg">
+  Your browser does not support the audio tag.
+</audio>
 </html>
