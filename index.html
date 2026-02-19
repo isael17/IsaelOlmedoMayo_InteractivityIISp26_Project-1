@@ -6,41 +6,16 @@
   <title>Greatest Anime</title>
    <link rel="stylesheet" href="style.css">
 </head>
-<header>Introduction</header>
-<p>Hello, my name is Isael Olmedo mayo. This page is gonna be about the greatest anime charcters of all time made into a wacky way of displaying with
-fun, and interactive way. There's gonna be music playing in the background. Th is meant for people to rleax and joy learning about the orgins of these characters.
-</p>
-<body style="font-size: xx-large;font-weight: 900;font-family: cursive; color: blue;cursor: grab;" class="flex-container">  <!--Contains the visible page content-->
-    The World of Amazing Cookie Warriors
-<div class="img-wrap">
+<body>
   <img src="./images/download2.jpg" alt="Cookie"width="500" height="auto">
-  <div class="img-description">
-    <p>Shadow Milk Cookie - One of the greatest cookies of time. He is the antithesit, and is a malicious trickster who relishes in chaos, confusion, and inequity. behind
-      his mask lies a lonely soul whosse disillusionment wore him down to the cruel, manupulative indivdual he is now.
-    </p>
-  </div>
-</div class="img-wrap">
-<img src="./images/maxresdefault.jpg" alt="Battle of Gods"width="400"height="250" class="collage" style="top:10px;left:1px;" style="transform:rotate(70deg)">
-<div class="img-description">
-    </div>
-  <br>
-  <br>
-  <br>
-  <br>
-</body>
-   <section>
-    <div  class="display-exp">
-      <div style="background-color: rgb(255, 217, 4); flex: 8;font-size: medium; font-style: italic;">Kyojuro Rengoku Was One of The Best Flame Hashira Of His Time</div>
-  </section>
 <img src="./images/Kimetsu_no_Yaiba_Animation_Illustration_Book_2.webp" alt="Clickable image" id="moveableImage" onclick="moveImage()">
-<img src="./images/download4.jpg" alt="Potati"width="400vw"height="250hw" class="collage" style="bottom:4px;right:5px;" style="transform:rotate(70deg)">
-<img src="./images/71ckeEkhOqL.jpg" alt="Potati"width="400vw"height="250hw" class="collage" style="bottom:4px;right:2px;" style="transform:rotate(70deg)">
-<img src="./images/download.jpg" alt="Potati"width="400vw"height="250hw" class="collage" style="right:3px;" style="transform:rotate(70deg)">
-<img src="./images/download9.jpg" alt="Potati"width="400vw"height="250hw" class="collage" style="left:7px;" style="transform:rotate(70deg)">
-<img src="./images/download4.jpg" alt="Potati"width="400vw"height="250hw" class="collage" style="bottom:4px;right:5px;" style="transform:rotate(70deg)">
-<img src="./images/timthumb.jpg" alt="Potati"width="400vw"height="250hw" class="collage" style="top:5px;" style="transform:rotate(70deg)">
-<img src="./images/images (1).jpg" alt="Potati"width="400vw"height="250hw" class="collage" style="bottom:7px;" style="transform:rotate(70deg)">
-<img src="./images/0a5ae820-7051-4495-bcca-61bf02897472.jpg" alt="Potati"width="400vw"height="250hw" class="collage" style="left: 1px;" style="transform:rotate(70deg)">
+
+    <script src="script.js"></script>
+    <img src="./images/maxresdefault.jpg" alt="Clickable image" id="moveableImage" onclick="moveImage()">
+<img src="./images/TMNT.OOTS.2016.1080p.web-dl.mkv_002931000.webp" alt="Clickable image" id="moveableImage2" onclick="moveImage()" style="transform: rotate(90deg);">
+<img src="./images/images.jpg" alt="Clickable image" id="moveableImage3" onclick="moveImage()" style="transform: scale(5);" class="collage" style="bottom: 6px;">
+<img src="./images/210226041421-02-pokemon-anniversary-design.jpg" alt="Clickable image" id="moveableImage2" onclick="moveImage()" style="transform: rotate(90deg); width: auto; height: auto;">
+
     <script src="script.js"></script>
 <script>
 function moveImage() {
@@ -48,24 +23,71 @@ function moveImage() {
     image.classList.toggle("moved");
 }
 </script>
-<br>
-<br>
-<audio autoplay loop>
-  <source src="./songs/Skillet - _Not Gonna Die_ [OFFICIAL MUSIC VIDEO].mp3" type="audio/mpeg">
-</audio>
-</audio>
-
-<!-- HTML for the control buttons -->
-<button onclick="playMedia()" type="button">Play</button>
-<button onclick="stopMedia()" type="button">Stop</button>
 <script>
-  var music = new Audio('./songs/Skillet - _Not Gonna Die_ [OFFICIAL MUSIC VIDEO].mp3');
-document.addEventListener('click', function() {
-    music.play();
+  var backgroundMusic = new Audio('./songs/Ivan Cornejo - Me Prometí (Lyric Video).mp3');
+backgroundMusic.loop = true;
+
+// Autoplay
+backgroundMusic.play().catch(function(error) {
+    console.log("Autoplay prevented. User interaction required.");
 });
+
+// Example: Play on first click
+document.body.addEventListener('click', () => {
+    backgroundMusic.play();
+});
+const music = document.getElementById('bgMusic');
+const btn = document.getElementById('playBtn');
+
+btn.addEventListener('click', () => {
+  if (music.paused) {
+    music.play();
+    btn.innerText = "Pause Music";
+  } else {
+    music.pause();
+    btn.innerText = "Play Music";
+  }
+});
+var myMusic = document.getElementById("./songs/Ivan Cornejo - Me Prometí (Lyric Video).mp3");
+
+function togglePause() {
+  if (myMusic.paused) {
+    myMusic.play(); // Resumes from where it stopped
+  } else {
+    myMusic.pause(M); // Pauses the music
+  }
+}
+
+
 </script>
-<audio controls>
-  <source src="./songs/Skillet - _Not Gonna Die_ [OFFICIAL MUSIC VIDEO].mp3" type="audio/mpeg">
-  Your browser does not support the audio tag.
+<audio autoplay loop>
+  <source src="./songs/Ivan Cornejo - Me Prometí (Lyric Video).mp3" type="audio/mpeg">
 </audio>
+<img src="./images/download4.jpg" alt="Potati"width="400vw"height="250hw" class="collage" style="bottom:4px;right:5px;">
+<img src="./images/71ckeEkhOqL.jpg" alt="Potati"width="400vw"height="250hw" class="collage" style="left:2px;">
+<img src="./images/download.jpg" alt="Potati"width="400vw"height="250hw" class="collage" style="bottom:3px;">
+<img src="./images/download9.jpg" alt="Potati"width="400vw"height="250hw" class="collage" style="left:7px;">
+<img src="./images/download4.jpg" alt="Potati"width="400vw"height="250hw" class="collage" style="bottom:4px;right:5px;">
+<img src="./images/timthumb.jpg" alt="Potati"width="400vw"height="250hw" class="collage" style="top:5px;">
+<img src="./images/0a5ae820-7051-4495-bcca-61bf02897472.jpg" alt="Hello"width="400vw"height="250hw" class="collage" style="right:2px;">
+<img src="./images/images (1).jpg" alt="Boo"width="400vw"height="150hw" class="collage" style="bottom:5px;">
+<img src="./images/images.jpg" alt="Boo"width="200vw"height="150hw" class="collage" style="bottom:10px;">
+<img src="./images/avo-frt-vege.webp" alt="Boo"width="200vw"height="150hw" class="collage" style="bottom:10px;">
+<img src="./images/TMNT.OOTS.2016.1080p.web-dl.mkv_002931000.webp" alt="Boo"width="200vw"height="150hw" class="collage" style="right:50px;">
+<div class="collage-container">
+  <img id="img1" src="./images/71ckeEkhOqL.jpg" alt="Description of image 1">
+  <img id="img2" src="./images/maxresdefault.jpg" alt="Description of image 2">
+  <img id="img3" src="./images/images.jpg" alt="Description of image 3">
+  <img id="img4" src="./images/download4.jpg" alt="Description of image 4">
+  <img id="img5" src="./images/download9.jpg" alt="Description of image 5">
+  <img id="img6" src="./images/timthumb.jpg" alt="Description of image 6">
+  <img id="img7" src="./images/download2.jpg" alt="Description of image 7">
+   <img id="img8" src="./images/download.jpg" alt="Description of image 8">
+    <img id="img9" src="./images/images (1).jpg" alt="Description of image 9">
+        <img id="img10" src="./images/0a5ae820-7051-4495-bcca-61bf02897472.jpg" alt="Description of image 10">
+                <img id="img11" src="./images/download.png" alt="Description of image 11">
+                <img id="img12" src="./images/avo-frt-vege.webp" alt="Description of image 12">
+                <img id="img13" src="./images/TMNT.OOTS.2016.1080p.web-dl.mkv_002931000.webp" alt="Description of image 13">
+</div>
+</body>
 </html>
