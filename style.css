@@ -125,3 +125,33 @@ top: 50px;
     position: relative; 
     transition: transform 2.5s ease-in-out; 
 }
+h1{
+  font-family: "Rubik Storm", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  font-size: larger;
+}
+@keyframes changeColor{
+    from {color: rgb(0, 134, 151);}
+    to {color: rgb(104, 0, 43);}
+}
+h1{
+    animation-name: changeColor;
+    animation-duration: 10s;
+    animation-delay: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+    animation-fill-mode: forwards;
+}
+p{
+  animation-name: changeColor2;
+  animation-duration: 5s;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: reverse;
+  animation-fill-mode: backwards;
+}
+@keyframes changeColor2{
+    from {color: rgb(198, 0, 248);}
+    to {color: rgb(104, 0, 43);}
+}
