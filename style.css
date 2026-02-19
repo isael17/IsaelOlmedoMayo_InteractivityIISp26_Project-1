@@ -170,7 +170,7 @@ main {
       position: relative;
       width: 120px;
       height: 120px;
-      border: 2px solid #1f7a3a;
+      border: 2px solid #750037;
       overflow: hidden;
       display: flex;
       align-items: center;
@@ -201,7 +201,7 @@ main {
     }
 
     .images {
-      border-left: 3px solid #1f7a3a;
+      border-left: 3px solid #4d0033;
       padding-left: 10px;
       font-size: 11px;
       width: 100%;
@@ -226,7 +226,7 @@ main {
     }
 
     .bottom h3 {
-      color: #ff4fa3;
+      color: #7c0840;
     }
 
     .bottom p {
