@@ -187,7 +187,6 @@ main {
       object-fit: cover;
       z-index: 0;
     }
-
     .box span {
       position: absolute;
       top: 50%; 
@@ -199,7 +198,6 @@ main {
       text-shadow: 1px 1px 5px rgba(0,0,0,0.7);
       font-size: 13px;
     }
-
     .images {
       border-left: 3px solid #4d0033;
       padding-left: 10px;
@@ -207,12 +205,10 @@ main {
       width: 100%;
       height: 100%;
     }
-
       .img-box {
       width: 100%;
       height: 400px;
     }
-
     .bottom {
       display: flex;
       justify-content: center;
@@ -220,15 +216,15 @@ main {
       padding: 20px 0;
       text-align: center;
     }
-
     .bottom div {
       max-width: 300px;
     }
-
     .bottom h3 {
       color: #7c0840;
     }
-
     .bottom p {
       font-size: 12px;
-    }
+}
+*{
+    cursor: url('images/maxresdefault.jpg'), auto;
+}
